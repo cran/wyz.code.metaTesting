@@ -1,0 +1,1 @@
+getEllipsisSubstitutionName <- function() 'ellipsis'
