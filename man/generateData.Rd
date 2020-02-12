@@ -21,7 +21,7 @@ generateData(function_f_1,
   using semantic argument names }
   \item{argumentsTypeRestrictions_l}{ a named \code{list}. Each name must match
   a function argument name. Each content must be a vector of strings, each of them
-  matching a \code{\link{DataFactory}} known suffix.
+  matching a \code{retrieveDataFactory()$getKnownSuffixes()} known suffix.
 }
   \item{replacementContext_l}{ a generation context, as defined by
   \code{\link{setGenerationContext}} function, applicable to standard arguments of the
@@ -52,7 +52,7 @@ Generated data are ready for use and accessible using the \code{data} name of
 the \code{list}.
 }
 \seealso{
-Refer to \code{\link{DataFactory}} and to \code{\link{testFunction}}.
+Refer to \code{\link{retrieveDataFactory}} and to \code{\link{testFunction}}.
 }
 \examples{
 # typical example

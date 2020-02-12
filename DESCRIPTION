@@ -1,7 +1,7 @@
 Package: wyz.code.metaTesting
 Type: Package
 Title: Wizardry Code Meta Testing
-Version: 1.1.4
+Version: 1.1.11
 Author: Fabien Gelineau <neonira@gmail.com>
 Maintainer: Fabien Gelineau <neonira@gmail.com>
 Description: Test R any R function without having to provide parameter values. 
@@ -17,13 +17,13 @@ Description: Test R any R function without having to provide parameter values.
 Encoding: UTF-8
 LazyData: true
 License: GPL-3
-Depends: R (>= 3.5)
+Depends: R (>= 3.6)
 Imports: methods, data.table (>= 1.11.8), tidyr, lubridate (>= 1.7.4),
-        wyz.code.offensiveProgramming (>= 1.1.12), crayon, utils, stats
+        wyz.code.offensiveProgramming (>= 1.1.17), crayon, utils, stats
 Suggests: testthat, knitr, rmarkdown
 RoxygenNote: 6.1.1
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2019-10-11 09:40:17 UTC; fgelineau
+Packaged: 2020-02-12 07:44:22 UTC; fabien
 Repository: CRAN
-Date/Publication: 2019-10-13 10:00:02 UTC
+Date/Publication: 2020-02-12 08:00:02 UTC

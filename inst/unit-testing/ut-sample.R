@@ -1,5 +1,5 @@
 
-df <- DataFactory()
+df <- retrieveDataFactory()
 
 op_kronecker <- opwf(kronecker, c('arrayA_a_1', 'arrayB_a_1', 'function_f_1', 'computeDimensionNames_b_1', '...'))
 
@@ -23,8 +23,7 @@ draw_function <- function(n_i_1, replace_b_1 = TRUE) { list(`*`, `+`, `-`)[[samp
 df$addSuffix('f', 'function', draw_function)
 
 # make your factory findable
-Sys.setenv("OP_DATA_FACTORY" = "df")
-
+options(op_mt_data_factory = df)
 es <- exploreSignatures(op_kronecker)
 
 

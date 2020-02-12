@@ -10,16 +10,10 @@ computeArgumentsCombination <- function(fun_f_1) {
   }
 
   spa <- function(a_s_1, b_s, ...) {
-    # if (length(a_s_1) == 0) return(b_s)
-    # if (length(b_s) == 0) return(a_s_1)
     paste(a_s_1, paste(b_s, collapse = ', '), ..., sep = ', ', collapse = ', ')
   }
 
   combineLists <- function(x_l, y_l) {
-    # lx <- length(x_l)
-    # if (lx == 0) return(y_l)
-    # ly <- length(y_l)
-    # if (ly == 0) return(x_l)
     l <- lapply(x_l, function(e) {
       lapply(y_l, function(h) {
         if (length(e) == 0) return(h)

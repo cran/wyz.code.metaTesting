@@ -35,9 +35,3 @@ codePatcher <- function(code_, originArgumentName_s, targetArgumentName_s) {
   })
 
 }
-
-showPairlist <- function(pairlist_l) {
-  if (length(pairlist_l) == 1) c(type = typeof(pairlist_l), value = as.character(pairlist_l)) else {
-    c(type = typeof(pairlist_l), value = lapply(pairlist_l, showPairlist))
-  }
-}

@@ -11,7 +11,7 @@ export(
   qualifyFunctionArguments,
   opwf,
   offensiveProgrammingWrapFunction,
-  DataFactory,
+  # DataFactory,
   retrieveDataFactory,
   generateData,
   setGenerationContext,
@@ -21,19 +21,12 @@ export(
   usesSemanticArgumentNames,
   buildSemanticArgumentName,
   exploreSignatures,
-  shareSameSignature,
-  packageFunctionsInformation,
+  opMetaTestingInformation,
 
   # variables
   erc,
   established_replacement_context,
   dac,
   default_arguments_context
-
-  # codeScanner,
-  # patchArgumentInCode,
-  # buildArgumentsSignature,
-  # generateEllipsisSubstitutionName,
-  # computeArgumentsSignature
 )
 

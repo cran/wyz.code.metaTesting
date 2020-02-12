@@ -55,19 +55,13 @@ test_that("opfw - good cases", {
 
   op_myfun2 <- createWrapperFunction(op_myfun, c('a_d', 'b_i', 'c_c', 'd_d'))
   expect_equal(length(formals(op_myfun2)), length(formals(op_myfun)))
-
-  # Sys.setenv('OP_AUDIT' = 'x')
-  # expect_output(createWrapperFunction(myfun, c('x_d', 'y_i', 'z_c', 't_d')))
-  # Sys.setenv('OP_AUDIT' = '')
-
 })
 
 
-Sys.setenv('OP_AUDIT' = 'x')
+options('op_audit' = TRUE)
 
 test_that("opfw - coverage ", {
  expect_output(createWrapperFunction(myfun, c('x_d', 'y_i', 'z_c', 't_d')))
 })
 
-Sys.setenv('OP_AUDIT' = '')
-
+options('op_audit' = FALSE)

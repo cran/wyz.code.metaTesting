@@ -1,5 +1,5 @@
-\name{packageFunctionsInformation}
-\alias{packageFunctionsInformation}
+\name{opMetaTestingInformation}
+\alias{opMetaTestingInformation}
 \title{
 Package functions information
 }
@@ -8,7 +8,7 @@ A reminder of available functions from this package, and, most common usage
 intent. A poor man CLI cheat sheet.
 }
 \usage{
-packageFunctionsInformation()
+opMetaTestingInformation()
 }
 \value{
 A \code{data.table} with following column names
@@ -31,7 +31,7 @@ Refer also to package vignettes.
 }
 \examples{
 ##---- typical case ----
-packageFunctionsInformation()
+opMetaTestingInformation()
 }
 \keyword{ programming }
 \keyword{ utilities }

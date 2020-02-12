@@ -19,7 +19,7 @@ exploreSignatures(fun_f_1,
   \item{argumentsTypeRestrictions_l}{
 a named \code{list}. Each name must match
   a function argument name. Each content must be a vector of strings, each of them
-  matching a \code{\link{DataFactory}} known suffix.
+  matching a \code{retrieveDataFactory()$getKnownSuffixes()} known suffix.
 }
   \item{signaturesRestrictions_l}{
 an unnamed \code{list} of single strings, each of them

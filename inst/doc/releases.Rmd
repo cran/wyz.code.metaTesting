@@ -1,0 +1,55 @@
+---
+title: "wyz.code.metaTesting releases"
+author: "Fabien GELINEAU"
+date: "Last update 2019.08.27"
+output: 
+  rmarkdown::html_vignette:
+    number_sections: true
+    toc: true
+    css: style.css
+vignette: >
+  %\VignetteIndexEntry{wyz.code.metaTesting releases}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+<img src='images/metatesting-hex.png' alt='offensive programming - meta testing' style='width:30%'/>
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "")
+source('vignette-common.R')
+```
+
+Latest release replaces fully olders ones, that are now considered obsoletes. Keep the pace, and  upgrade your packages to use the latest version!
+
+# Release 1.1.4 - January 2020 
+
+Main improvements are 
+
+1. removed environment variable `r citecode("OP_DATA_FACTORY")` management. Replaced by `r citecode("options('op_mt_data_factory')")`
+1. solved CRAN compilation issue on older R release - enforced R dependency to R 3.6 or higher
+1. **packageFunctionsInformation** renamed to **metaTestingInformation** to avoid name collisions
+1. **metaTestingInformation** verified and upgraded
+1. redesign of vignette files - now industrialized with external style
+1. Worked on test coverage to reach level higher than 99%
+1. cleaned up dependencies
+1. Reviewed and cleaned up code - 23 files - 18 exported function - 9 internals
+1. Reviewed and cleaned up manual pages - 13 files
+1. Reviewed and updated tests - 21 files - 475 unit tests
+1. Vignettes upgraded - 1  vignette
+1. Timing for tests 3s, checks 27s
+
+# Release 1.1.3 - Octobre 2019
+
+Main improvements are 
+
+1. enhanced implementation
+1. completed unit tests
+1. enforced higher code coverage (from 55.23% up to 100%)
+1. documentation completion
+1. clean up package dependencies. 
+
+This release replaces fully olders ones, that are now considered obsoletes. 
+
+
+

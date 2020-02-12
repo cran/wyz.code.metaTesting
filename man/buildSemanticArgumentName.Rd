@@ -10,7 +10,8 @@ Build a semantic argument name from the suffix you provide.
 buildSemanticArgumentName(suffix_s_1, prefix_s_1 = "x_")
 }
 \arguments{
-  \item{suffix_s_1}{ one legal suffix. See \code{\link{DataFactory}} to get a vector
+  \item{suffix_s_1}{ one legal suffix. Use
+  \code{retrieveDataFactory()$getKnownSuffixes()} to get a vector
   of known suffixes. Legal suffixes are known suffixes, augmented by suffixes
   you registered.
 }

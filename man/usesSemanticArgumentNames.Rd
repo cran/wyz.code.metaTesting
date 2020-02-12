@@ -22,10 +22,10 @@ Maintainer: \packageMaintainer{wyz.code.metaTesting}
 f <- function(x_) x_
 
 usesSemanticArgumentNames(f)
-#TRUE
+# TRUE
 
 usesSemanticArgumentNames(sum)
-#FALSE
+# FALSE
 }
 \keyword{ programation}
 \keyword{ utilities }

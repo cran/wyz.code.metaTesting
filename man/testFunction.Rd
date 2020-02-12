@@ -34,7 +34,7 @@ Generated data are ready for use and accessible using the \code{data} name of
 the \code{list}.
 }
 \seealso{
-Refer to \code{\link{DataFactory}} and to \code{\link{opwf}}.
+Refer to \code{\link{opwf}}.
 }
 \examples{
 # typical example

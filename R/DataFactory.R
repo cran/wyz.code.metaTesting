@@ -169,11 +169,15 @@ DataFactory <- function() {
   }
 
   verifyFunctionDeclaration <- function(suffix_s_1, typeVerifier_f_1) {
-    if (suffix_s_1 != 'l' && !shareSameSignature(typeVerifier_f_1, drawBoolean)) return(FALSE)
+    if (suffix_s_1 != 'l' && !matchFunctionSignature(typeVerifier_f_1, drawBoolean)) return(FALSE)
     vfn <- tf$getVerificationFunction(suffix_s_1)
     if (!is.function(vfn)) return(FALSE)
-    if (!vfn(typeVerifier_f_1(3))) return(FALSE)
-    TRUE
+    data <- typeVerifier_f_1(3L)
+    if (is.list(data)) {
+      all(sapply(data, vfn) == TRUE)
+    } else {
+      all(vfn(data) == TRUE)
+    }
   }
 
   getRowNumber <- function(value_s_1) {
@@ -190,9 +194,8 @@ DataFactory <- function() {
 
   addSuffix <- function(suffix_s_1, type_s_1, typeVerifier_f_1) {
     if (!is.function(typeVerifier_f_1)) return(FALSE)
-    if (!verifyFunctionDeclaration(suffix_s_1, typeVerifier_f_1)) return(FALSE)
-
     s <- gsub('_*([A-Za-z].*)', '\\1', suffix_s_1, perl = TRUE)
+    if (!verifyFunctionDeclaration(s, typeVerifier_f_1)) return(FALSE)
     rv <- checkSuffix(s)
     if (!rv) dt <<- data.table::rbindlist(list(dt, list(s, type_s_1, list(typeVerifier_f_1))))
     !rv
