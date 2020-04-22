@@ -173,7 +173,7 @@ exploreSignatures <- function(fun_f_1,
   lg <- if (length(g) > 0) {
     dg <- rbindlist(g)
     ll <- list(
-      number_sucessfull_tests = nrow(dg),
+      number_successfull_tests = nrow(dg),
       signatures = unique(dg$call_signature),
       imperative = computeReplacementSynthesis(unlist(dg$replacement)),
       ellipsis = computeReplacementSynthesis(unlist(dg$ellipsis)),

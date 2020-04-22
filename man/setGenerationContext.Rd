@@ -3,9 +3,7 @@
 \alias{established_replacement_context}
 \alias{erc}
 \title{Set generation context.}
-\description{
-Use this function to set generation context.
-}
+\description{ Use this function to set a generation context }
 \usage{
  setGenerationContext(replacementNumber_ui_1 = sample(0:3L, 1),
                       homogeneousTypeReplacement_b_1 = FALSE,
@@ -13,22 +11,23 @@ Use this function to set generation context.
                       forceList_b_1 = FALSE)
 }
 \arguments{
-\item{replacementNumber_ui_1}{ a single unsigned integer expressing the number
+\item{replacementNumber_ui_1}{ a single positive \emph{\code{integer}} expressing the number
 of arguments to generate.}
-\item{homogeneousTypeReplacement_b_1}{A single boolean expressing willingness to
+\item{homogeneousTypeReplacement_b_1}{A single \emph{\code{boolean}}  expressing willingness to
 replace chosen argument with same type arguments, or not. Useful when dealing with
 \ldots. }
-\item{allowList_b_1}{a single boolean, expressing the desired result. When \code{TRUE}
+\item{allowList_b_1}{a single \emph{\code{boolean}} , expressing the desired result. When \code{TRUE}
 result is a \code{list}, a \code{vector} otherwise. }
-\item{forceList_b_1}{a single boolean, expressing the desire to get the result as
-a \code{list}. }
+\item{forceList_b_1}{a single \emph{\code{boolean}} , expressing the desire to get the result as
+a \emph{\code{list}}. }
 }
 \value{
-A \code{list} containing all the provided arguments, accessible through names
-\code{homogeneous_type}, \code{number_replacements}, and \code{allow_list}.
+A \emph{\code{list}} containing all the provided arguments, accessible through names
+\bold{\code{homogeneous_type}}, \bold{\code{number_replacements}}, and \bold{\code{allow_list}}.
 
-Predefined variables named \code{established_replacement_context} and \code{erc}
-hold most common definition cases, and therefore greatly eases use and simplify writing.
+Predefined variables named \bold{\code{established_replacement_context}} and \bold{\code{erc}}
+hold most common definition cases. Very helpfull as it simplifies reuses and reduces code
+length.
 }
 \author{
 \packageAuthor{wyz.code.metaTesting}

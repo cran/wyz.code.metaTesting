@@ -1,42 +1,53 @@
 context("computeArgumentsCombination")
 
-o <- lapply(list(Sys.Date, cos, sum, append, ls, deparse, kronecker, paste, print, options,
-                 vector),
-            computeArgumentsCombination)
+# test on Ubuntu and Windows only.
+# Fails on Debian for sure as reported by CRAN
+# According to Uwe LIGGES, following are to be known
+# Signatures of base functions may change for new versions of R anyway.
+# Signatures are not always identical between Linux, MAc, and Windows.
 
-test_that("computeArgumentsCombination", {
+s <- Sys.info()
+test_flag <- s['sysname'] == 'Windows' || grepl('Ubuntu', s['version'], fixed = TRUE)
 
-  mtf <- function(k, ex) {
-    a <- o[[k]]$number$argument
-    expect_equal(o[[!!k]]$number$argument, ex[1])
+if (test_flag) {
+  o <- lapply(list(Sys.Date, cos, sum, append, ls,
+                   deparse, kronecker, paste, print, options,
+                   vector),
+              computeArgumentsCombination)
 
-    e <- max(o[[k]]$number$ellipsis)
-    expect_equal(e, ex[2])
+  test_that("computeArgumentsCombination", {
 
-    d <- max(o[[k]]$number$default)
-    expect_equal(d, ex[3])
+    mtf <- function(k, ex) {
+      a <- o[[k]]$number$argument
+      expect_equal(o[[!!k]]$number$argument, !!ex[1])
 
-    expect_true(typeof(o[[!!k]]$signatures) == 'list')
+      e <- max(o[[k]]$number$ellipsis)
+      expect_equal(!!e, !!ex[2])
 
-    lapply(seq_len(length(o[[k]]$signatures)), function(j) {
-      expect_true(length(o[[!!k]]$signatures[[!!j]]) <= 1)
-    })
+      d <- max(o[[k]]$number$default)
+      expect_equal(!!d, !!ex[3])
 
-    s <- sum(unlist(o[[k]]$number))
-    if ( s > 0) expect_true(typeof(o[[!!k]]$signatures[[1]]) == 'character')
+      expect_true(typeof(o[[!!k]]$signatures) == 'list')
 
-    if (s == 0) expect_length(o[[!!k]]$signatures, 1)
-    if (a == 0 && e == 0 && d != 0) expect_length(o[[!!k]]$signatures, 2^d)
-    if (a == 0 && e != 0 && d == 0) expect_length(o[[!!k]]$signatures, 1 + e) # = 4
-    if (a == 0 && e != 0 && d != 0) expect_length(o[[!!k]]$signatures, 2^(e + d - 1))
+      lapply(seq_len(length(o[[k]]$signatures)), function(j) {
+        expect_true(length(o[[!!k]]$signatures[[!!j]]) <= 1)
+      })
 
-    if (a != 0 && e == 0 && d == 0) expect_length(o[[!!k]]$signatures, 1)
-    if (a != 0 && e != 0 && d == 0) expect_length(o[[!!k]]$signatures, 1 + e) # = 4
-    if (a != 0 && e != 0 && d != 0) expect_length(o[[!!k]]$signatures, 2^(e + d - 1))
-    if (a != 0 && e == 0 && d != 0) expect_length(o[[!!k]]$signatures, 2^d)
+      s <- sum(unlist(o[[k]]$number))
+      if ( s > 0) expect_true(typeof(o[[!!k]]$signatures[[1]]) == 'character')
 
-  }
-            # a, e, d
+      if (s == 0) expect_length(o[[!!k]]$signatures, 1)
+      if (a == 0 && e == 0 && d != 0) expect_length(o[[!!k]]$signatures, 2^d)
+      if (a == 0 && e != 0 && d == 0) expect_length(o[[!!k]]$signatures, 1 + e) # = 4
+      if (a == 0 && e != 0 && d != 0) expect_length(o[[!!k]]$signatures, 2^(e + d - 1))
+
+      if (a != 0 && e == 0 && d == 0) expect_length(o[[!!k]]$signatures, 1)
+      if (a != 0 && e != 0 && d == 0) expect_length(o[[!!k]]$signatures, 1 + e) # = 4
+      if (a != 0 && e != 0 && d != 0) expect_length(o[[!!k]]$signatures, 2^(e + d - 1))
+      if (a != 0 && e == 0 && d != 0) expect_length(o[[!!k]]$signatures, 2^d)
+
+    }
+    #         a, e, d
     mtf(1 , c(0, 0, 0))  # none
     mtf(2 , c(1, 0, 0))  # args only
     mtf(3 , c(0, 3, 1))  # ellipsis and default
@@ -49,3 +60,4 @@ test_that("computeArgumentsCombination", {
     mtf(10, c(0, 3, 0))  # ellipsis only
     mtf(11, c(0, 0, 2))  # default only
   })
+}

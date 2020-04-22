@@ -9,7 +9,7 @@ retrieveDataFactory <- function() {
     factory_o_1
   }
 
-  g <- options('op_mt_data_factory')$op_mt_data_factory
+    g <- options('op_mt_data_factory')$op_mt_data_factory
   if (is.environment(g) && is(g, 'DataFactory')) return(traceFactory(g, 'user defined'))
   traceFactory(DataFactory())
 }

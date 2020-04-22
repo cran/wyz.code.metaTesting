@@ -1,11 +1,11 @@
 ---
 title: "wyz.code.metaTesting releases"
 author: "Fabien GELINEAU"
-date: "Last update 2019.08.27"
+date: "Last update 2020.04.22"
 output: 
   rmarkdown::html_vignette:
-    number_sections: true
-    toc: true
+    number_sections: false
+    toc: false
     css: style.css
 vignette: >
   %\VignetteIndexEntry{wyz.code.metaTesting releases}
@@ -21,6 +21,13 @@ source('vignette-common.R')
 ```
 
 Latest release replaces fully olders ones, that are now considered obsoletes. Keep the pace, and  upgrade your packages to use the latest version!
+
+# Release 1.1.12 - April, 22th 2020 
+
+1. Test, Duration: `r citefigure('2.9s')`, OK: `r citefigure('475')`
+1. R CMD check, Duration: `r citefigure('28.2s')`, 0 errors ✓ | 0 warnings ✓ | 0 notes ✓
+1. Reviewed all documentation
+1. Upgraded and updated vignettes
 
 # Release 1.1.4 - January 2020 
 

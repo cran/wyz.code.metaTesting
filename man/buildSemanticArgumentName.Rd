@@ -7,22 +7,22 @@ Build semantic argument name
 Build a semantic argument name from the suffix you provide.
 }
 \usage{
-buildSemanticArgumentName(suffix_s_1, prefix_s_1 = "x_")
+buildSemanticArgumentName(suffix_s_1, variableName_s_1 = "x_")
 }
 \arguments{
-  \item{suffix_s_1}{ one legal suffix. Use
-  \code{retrieveDataFactory()$getKnownSuffixes()} to get a vector
-  of known suffixes. Legal suffixes are known suffixes, augmented by suffixes
-  you registered.
+  \item{suffix_s_1}{ one \emph{\code{string}} to be used as a suffix. Use
+  \code{retrieveDataFactory()$getKnownSuffixes()} to get a \emph{\code{vector}}
+  of known suffixes.
 }
-  \item{prefix_s_1}{ the variable prefix name you want to use. }
+  \item{variableName_s_1}{ a \emph{\code{string}} that is the variable name you want to use. }
 }
 \details{
- Know that no checks are done on \code{suffix_s_1}. Value you provide will be trusted,
+ Know that no checks are done on \bold{\code{suffix_s_1}}. Value you provide will be trusted,
  regular or irregular one.
 }
 \value{
-A single string.
+A single \emph{\code{string}} that is the argument name build from your \bold{\code{variableName_s_1}}
+and \bold{\code{suffix_s_1}} values.
 }
 \author{
 \packageAuthor{wyz.code.metaTesting}

@@ -6,6 +6,11 @@ citesection <- function(x_s) paste0('<cite class="bj">', x_s, '</cite>')
 citecode <- function(x_s) paste0('<cite class="oc">', x_s, '</cite>')
 citechar <- function(x_s) paste0('<cite class="isa">', x_s, '</cite>')
 cmt <- function(x_s) paste0('<cite class="comment">', x_s, '</cite>')
+citefigure <- function(x_s) paste0('<cite class="figure">', x_s, '</cite>')
+citetime <- function(x_s) paste0('<cite class="time">', x_s, '</cite>')
+
+citefile <- function(x_s) paste0('<cite class="file">', x_s, '</cite>')
+citefolder <- function(x_s) paste0('<cite class="folder">', x_s, '</cite>')
 
 rdoc <- citeval('wyz.code.rdoc')
 roxy <- citeval('roxygen2')
@@ -15,4 +20,11 @@ R <- citefun('R')
 brkfun <- function(x_s) {
   paste(sapply(x_s, function(e) paste('\u25b6', e, '<br/>')), collapse = '')
 }
+
+showCodeAnalysis <- function(folder_s) {
+  z <- proceedToCodeAnalysis(folder_s)
+  DT::datatable(z[, -2], options = list(pageLength = 25))
+}
+
+
 

@@ -8,10 +8,10 @@ Determine if the given function uses semantic argument names.
 usesSemanticArgumentNames(fun_f_1)
 }
 \arguments{
-\item{fun_f_1}{A single function}
+\item{fun_f_1}{A single \emph{\code{function}}}
 }
 \value{
-A boolean value
+A \emph{\code{TRUE}} when arguments used by function are all semantic names.
 }
 \author{
 \packageAuthor{wyz.code.metaTesting}

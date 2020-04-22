@@ -4,26 +4,27 @@
 \alias{dac}
 \title{Set default arguments generation context.}
 \description{
-Use method \code{setDefaultArgumentsGenerationContext} to set default arguments generation context.
+Set default arguments generation context
 }
 \usage{
 setDefaultArgumentsGenerationContext(useDefaultArguments_b_1 = TRUE,
                                      useAllDefaultArguments_b_1 = FALSE)
 }
 \arguments{
-\item{useDefaultArguments_b_1}{a single boolean value to specify the usage of
+\item{useDefaultArguments_b_1}{a single \emph{\code{boolean}} value to specify the usage of
 default arguments in generated function call}
-\item{useAllDefaultArguments_b_1}{A single boolean value to specify usage of all
+\item{useAllDefaultArguments_b_1}{A single \emph{\code{boolean}}  value to specify usage of all
 default valued arguments in generated function call. Second argument is
-considered only when first argument is \code{TRUE}.}
+considered only when first argument is \emph{\code{TRUE}}.}
 }
 \value{
-A \code{list} holding the provided values, allowing easy reuse either interactively
+A \emph{\code{list}} holding the provided values, allowing easy reuse either interactively
 or programmatically, accessible through names
-\code{use},  and \code{use_all}.
+\bold{\code{use}},  and \bold{\code{use_all}}.
 
-Predefined variables named \code{default_arguments_context} and \code{dac}
-hold most common definition cases, and therefore greatly eases use and simplify writing.
+Predefined variables named \bold{\code{default_arguments_context}} and \bold{\code{dac}}
+hold most common definition cases. Very helpfull as it simplifies reuses and reduces code
+length.
 }
 \author{
 \packageAuthor{wyz.code.metaTesting}

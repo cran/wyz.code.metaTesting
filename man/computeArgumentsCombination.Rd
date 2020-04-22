@@ -1,37 +1,32 @@
 \name{computeArgumentsCombination}
 \alias{computeArgumentsCombination}
-\title{
-Compute Function Arguments Combination
-}
+\title{Compute Function Arguments Combination }
 \description{
 Computes a priori legal combinations of function arguments, according to the
 function definition (see \code{\link{formals}}).
-
-Allows to foresee test complexity for a function, as this is in narrow relationship,
-with the number of various call signatures that could be used. The number of signatures
-is in itself a good indicator of complexity.
 }
 \usage{
 computeArgumentsCombination(fun_f_1)
 }
-
 \arguments{
-  \item{fun_f_1}{ an \R function }
+  \item{fun_f_1}{ an \R \emph{\code{function}} }
 }
 \details{
-Computes an a priori legal \code{list} of argument signatures for the provided
+Computes an a priori legal \emph{\code{list}} of argument signatures for the provided
 function.
+
+Allows to foresee test complexity for a function, as this is in narrow relationship,
+with the number of various call signatures that should be tested. The number of signatures
+is in itself a good indicator of complexity.
 }
 \value{
-A \code{list} holding \code{names}, \code{number} and \code{signatures}, each of
-them are \code{list}.
-
-The \code{names} provides names of mandatory \code{arguments}, \code{ellipsis} (\ldots)
-arguments and of \code{default} arguments.
-
-The \code{number} provides the number of replacements per argument.
-
-The \code{signatures} are the resulting textual argument combinations.
+A \emph{\code{list}} containing following named \bold{\code{list}}
+\tabular{ll}{
+\bold{\code{names}} \tab names of mandatory \bold{\code{arguments}}, \bold{\code{ellipsis} (\ldots)}
+arguments and of \bold{\code{default}} arguments. \cr
+\bold{\code{number}} \tab The \code{number} provides the number of replacements per argument. \cr
+\bold{\code{signatures}} \tab The \code{signatures} are the resulting textual argument combinations. \cr
+}
 }
 \author{
 \packageAuthor{wyz.code.metaTesting}

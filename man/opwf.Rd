@@ -11,19 +11,19 @@ Create an offensive programming function, wrapping a standard \R function.
 opwf(fun_f_1, parameterNames_s, functionName_s_1 = NA_character_)
 }
 \arguments{
-  \item{fun_f_1}{ a single \R function }
+  \item{fun_f_1}{ a single \R \emph{\code{function}} }
   \item{parameterNames_s}{ the new names of the parameter function, must be
-  semantic argument names.  Must be a bijection to real \code{fun_f_1} argument names. }
-  \item{functionName_s_1}{ A character vector of length 1, holding the function name.
-  Default value, implies evaluation using \code{deparse(substitute(fun_f_1))}. This is
-  particularly useful, in scripts. }
+  semantic argument names.  Must be a bijection to actual \bold{\code{fun_f_1}} argument names. }
+  \item{functionName_s_1}{ A \emph{\code{string}} holding the function name.
+  Default value, implies evaluation using \emph{\code{deparse(substitute(fun_f_1))}}
+  }
 }
 \details{
-Arguments default values, if any, are managed, and should be correctly and automatically
-substituted.
+If any arguments default values are present, they are managed transparently and
+should be correctly and automatically substituted.
 }
 \value{
-A \R \code{function} which takes given \code{parameterNames_s} as arguments.
+A \R \emph{\code{function}} which takes given \bold{\code{parameterNames_s}} as arguments.
 }
 \author{
 \packageAuthor{wyz.code.metaTesting}
@@ -31,7 +31,7 @@ A \R \code{function} which takes given \code{parameterNames_s} as arguments.
 Maintainer: \packageMaintainer{wyz.code.metaTesting}
 }
 \seealso{
-Refer to \code{\link{testFunction}}
+Refer to \bold{\emph{\code{\link{testFunction}}}}
 }
 \examples{
 # typical example

@@ -1,8 +1,6 @@
 \name{retrieveDataFactory}
 \alias{retrieveDataFactory}
-\title{
-Retrieve Data Factory
-}
+\title{Retrieve Data Factory}
 \description{
 As the data factory may be modified, this function allows you to make changes and to record them in
 your own specialized data generation factory, to match various needs and ease reuse. }
@@ -12,11 +10,13 @@ retrieveDataFactory()
 \details{
 Provides a data factory.
 
-Retrieves a \code{DataFactory} from options variable \code{op_mt_data_factory}
-to consider your customized data factory.
+Retrieves a \bold{\emph{\code{\link{retrieveDataFactory}}}} from options variable
+\bold{\code{op_mt_data_factory}}.
+
+Allow to customize data factory entries.
 }
 \value{
-An \R object that is a \code{DataFactory}.
+An \R \emph{\code{object}}  that is a \bold{\emph{\code{\link{retrieveDataFactory}}}} .
 }
 \author{
 \packageAuthor{wyz.code.metaTesting}

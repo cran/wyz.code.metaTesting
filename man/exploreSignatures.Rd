@@ -1,8 +1,6 @@
 \name{exploreSignatures}
 \alias{exploreSignatures}
-\title{
-Explore Signatures
-}
+\title{Explore Signatures}
 \description{
 Test an offensive programming wrapper function, applying various argument
 signatures.
@@ -13,16 +11,16 @@ exploreSignatures(fun_f_1,
                   signaturesRestrictions_l = list())
 }
 \arguments{
-  \item{fun_f_1}{ a single \R function. Must be an offensive programming wrapper
+  \item{fun_f_1}{ a single \R \emph{\code{functiion}}. Must be an offensive programming wrapper
   function. See \code{\link{opwf}}.
 }
   \item{argumentsTypeRestrictions_l}{
-a named \code{list}. Each name must match
+a named \emph{\code{list}}. Each name must match
   a function argument name. Each content must be a vector of strings, each of them
   matching a \code{retrieveDataFactory()$getKnownSuffixes()} known suffix.
 }
   \item{signaturesRestrictions_l}{
-an unnamed \code{list} of single strings, each of them
+an unnamed \emph{\code{list}} of single strings, each of them
   matching one of \code{computeArgumentsCombination(fun_f_1)$signature}.
 }
 }
@@ -41,33 +39,33 @@ When working interactively, a good practice is to use \code{\link{computeArgumen
 
 }
 \value{
-A \code{list} with names \emph{\code{info}}, \emph{\code{success}}, \emph{\code{failure}}, each of them
-being a \code{list}.
+A \emph{\code{list}} with names \bold{\code{info}}, \bold{\code{success}}, \bold{\code{failure}}, each of them
+being a \bold{list}.
 
-The \emph{\code{info}} sub-list holds execution results. It holds following entries
+The \emph{\code{info}} sub \emph{\code{list}} holds execution results. It holds following entries
 \itemize{
-  \item{\emph{\code{raw}}} {is a \code{list}, providing capture of execution context, data and results.}
-  \item{\emph{\code{good}}} {is a \code{list}, providing same information as \emph{\code{raw}}, filtered to retain only tests that do not generate any error.}
-  \item{\emph{\code{bad}}} {is a \code{list}, providing same information as \emph{\code{raw}}, filtered to retain only tests that do generate error.
+  \item{\bold{\emph{\code{raw}}}} {is a \emph{\code{list}} , providing capture of execution context, data and results.}
+  \item{\bold{\emph{\code{good}}}} {is a \emph{\code{list}} , providing same information as \emph{\code{raw}}, filtered to retain only tests that do not generate any error.}
+  \item{\bold{\emph{\code{bad}}}} {is a \emph{\code{list}} , providing same information as \emph{\code{raw}}, filtered to retain only tests that do generate error.
 }
 }
 
-The \emph{\code{success}} sub-list holds analysis results for tests which do
+The \emph{\code{success}} sub \emph{\code{list}} holds analysis results for tests which do
 not generate errors. It holds following entries
 \itemize{
-  \item{\emph{\code{code}}} {is a \code{data.table}, providing used call code and results.}
-  \item{\emph{\code{table}}} {is a \code{data.table}, providing used argument signatures and execution context information.}
-  \item{\emph{\code{synthesis}}} {is a \code{list}, providing synthesis information. Much easier to read, than \code{table} entry.
+  \item{\bold{\emph{\code{code}}}} {is a \emph{\code{data.table}}, providing used call code and results.}
+  \item{\bold{\emph{\code{table}}}} {is a \emph{\code{data.table}}, providing used argument signatures and execution context information.}
+  \item{\bold{\emph{\code{synthesis}}}} {is a \emph{\code{list}}, providing synthesis information. Much easier to read, than \code{table} entry.
 }
 }
 
-The \emph{\code{failure}} subsist holds analysis results for tests which do
+The \emph{\code{failure}} sub \emph{\code{list}} holds analysis results for tests which do
 generate errors. It holds following entries
 \itemize{
-  \item{\emph{\code{table}}} {is a \code{data.table}, providing encountered error messages and execution
+  \item{\bold{\emph{\code{table}}}} {is a \emph{\code{data.table}}, providing encountered error messages and execution
 context information}
-  \item{\emph{\code{synthesis}}} {is a \code{list}, providing synthesis information. Much easier to read,
-than \code{table} entry.
+  \item{\bold{\emph{\code{synthesis}}}} {is a \emph{\code{list}}, providing synthesis information. Much easier to read,
+than \emph{\code{table}} entry.
 }
 }
 }
