@@ -17,10 +17,29 @@ vignette: >
 
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(collapse = TRUE, comment = "")
-source('vignette-common.R')
+source('common-style.R')
 ```
 
 Latest release replaces fully olders ones, that are now considered obsoletes. Keep the pace, and  upgrade your packages to use the latest version!
+
+# name [awesome-asterion-tau] package-version [1.1.19] timestamp [2020-11-09 19:49:02]
+
+1. solved test issue related to R 4.0
+1. enforced R 4.0
+1. Test, Duration: `r citefigure('3.0s')`, OK: `r citefigure('491')`
+1. `r citeexec('R CMD check')`, Duration: `r citefigure('33.9s')`, 0 errors ✓ | 0 warnings ✓ | 0 notes ✓
+1. `r citeval('Commercial software release management')`
+1. `r citefolder('vignette')` content update
+1. `r citeop("git")` alignment
+
+
+# Release awesome-asterion-nu - 1.1.13 - 2020-05-04
+
+1. Test, Duration: `r citefigure('2.9s')`, OK: `r citefigure('475')`
+1. `r citeexec('R CMD check')`, Duration: `r citefigure('27.9s')`, 0 errors ✓ | 0 warnings ✓ | 0 notes ✓
+1. `r citeval('Commercial software release management')`
+1. `r citefolder('vignette')` structure update
+1. `r citefolder('vignette')` content update
 
 # Release 1.1.12 - April, 22th 2020 
 

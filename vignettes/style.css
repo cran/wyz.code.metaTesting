@@ -1,6 +1,8 @@
 body {
   font-size: 14px;
   text-align: justify;
+  background: #111111;
+  color: #777777;
 }
 
 table { width: 100%;}
@@ -26,7 +28,8 @@ cite.bo { font-weight: bold;  color: olive;}
 cite.bt { font-weight: bold;  color: lightSalmon;}
 cite.isa { font-weight: bold;  color: ForestGreen;}
 cite.isa-tb { font-weight: bold;  color: MediumAquamarine;}
-cite.it { font-weight: bold;  color: royalBlue;}
+cite.it { font-weight: normal;  color: royalBlue;}
+cite.itb { font-weight: bold;  color: royalBlue;}
 cite.ea { font-weight: bold;  color: CornFlowerBlue;}
 cite.m { font-weight: normal;  color: orchid;}
 cite.oc { font-weight: normal;  color: CornFlowerBlue;}
@@ -43,6 +46,7 @@ cite.time { font-weight: bold;  color: purple;}
 cite.figure { font-weight: bold;  color: orange;}
 cite.file { font: 'Courier new'; color: #00BF00; font-weight: bold;}
 cite.folder { font: 'Courier new'; color: #00BF00; font-weight: bold; font-style: normal;}
+cite.exec { font-weight: normal;  color: #8C4600;}
 
 /*cite.archi { font-weight: normal;  color: CornFlowerBlue;}
 cite.qos { font-weight: normal;  color: darkKhaki;}
@@ -80,3 +84,5 @@ div.question { padding-left: 10px; padding-right: 10px; border-radius: 25px; wid
   color: orange;
 }
 span.question { font-size: 1.3em; font-weight: bolder; display: block; }
+
+

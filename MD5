@@ -1,4 +1,4 @@
-676ea0845b648af90c81e848cc08e1c2 *DESCRIPTION
+aca644cd0790e2a3a6549ee54f9400f9 *DESCRIPTION
 0e1ceed55e46835c32f5720e546aae1e *NAMESPACE
 094febed9c250fc964b92572956d7336 *R/DataFactory.R
 7b107fcdc561e9af781a4ca97d33ef5e *R/buildArgumentsSignature.R
@@ -23,11 +23,12 @@ b092feeb5dd33f20a84a87ed6d7b335d *R/removeEllipsisName.R
 4ea687d99033dca74ffd667e0d47b2aa *R/setGenerationContext.R
 57e0a0210b8402ca90645584e3c90852 *R/testFunction.R
 e0170058c1907698434f2946099e8bb4 *R/usesSemanticArgumentNames.R
-664f0831f094677dbc45787096038d09 *build/partial.rdb
-be5cfbebcf3e1bb84913f1b0d2acb159 *build/vignette.rds
-66f8535272322f8ddf40827b81f4486c *inst/doc/releases.R
-17b6907bf2bb23d28d2d8e8b4850f412 *inst/doc/releases.Rmd
-06247f656d77925aeeeaf1a026e0c0bb *inst/doc/releases.html
+6534e6b7b0203b3b2b5b96d9dd5af3ab *build/partial.rdb
+fc8f0004aa1040e312474312d29137ed *build/vignette.rds
+5bc83ef41cde426556b33d69e8e21d49 *inst/doc/release-notes.R
+de1efd25e6cd5e977e3c1dee662db3b8 *inst/doc/release-notes.Rmd
+59e4ff1463dcd04d99bb180849d8a95c *inst/doc/release-notes.html
+7129187cdeb942cababc9b737e3b6fe8 *inst/extdata/project-release.rds
 d06b0712cb5811161401b6ff4b409cff *inst/unit-testing/ut-computeArgumentCombination.R
 2552e7eb280033cdc871fc0bda3da91c *inst/unit-testing/ut-divide.R
 8c2eb3f82fffe5f2cc042caa13aa0539 *inst/unit-testing/ut-exploreSignatures.R
@@ -52,7 +53,7 @@ e142a7213f88bb9b47091c84baa1f40f *tests/testthat/test_buildEllipsisNames.R
 b4299420cd5c84dd69c4bfda9512ef5e *tests/testthat/test_buildEllipsisSignature.R
 1292159c03e1528d31ee39d4156fbf60 *tests/testthat/test_buildSemanticArgumentName.R
 6d2cbefe05795b38e32179ba59f840cd *tests/testthat/test_codePatcher.R
-c48a1a9a34a3fc0227b9d0f32b4a37b5 *tests/testthat/test_computeArgumentsCombination.R
+7e1793425dd4d443595888cd0b330572 *tests/testthat/test_computeArgumentsCombination.R
 974ad339a5b3e0b5d7241a8bf0a36f00 *tests/testthat/test_computeArgumentsSignature.R
 fb3976569747b49b68ce27be4a27c8ff *tests/testthat/test_computeContext.R
 3679fe865e536e8862188fda6e75831a *tests/testthat/test_exploreSignatures.R
@@ -67,7 +68,7 @@ fca04a00d1c9c8e88c84abfc1150c18d *tests/testthat/test_retrieveDataFactory.R
 14936e3f568eccca0f23e2ea14ced457 *tests/testthat/test_setDefaultArgumentsGenerationContext.R
 e3fe5caa355dd14f9cb14097ea896cae *tests/testthat/test_setGenerationContext.R
 f05753c5e9bf154c761fc21afec7542c *tests/testthat/test_testFunction.R
+c4c87e9461f00d88cc27182c80fb4e87 *vignettes/common-style.R
 21139cabc37e230dca24bf2706da5b97 *vignettes/images/metatesting-hex.png
-17b6907bf2bb23d28d2d8e8b4850f412 *vignettes/releases.Rmd
-5e9c23c51cda1819e2b789b2d02abd9a *vignettes/style.css
-4b40161c1f799637766b1d7aab3433d9 *vignettes/vignette-common.R
+de1efd25e6cd5e977e3c1dee662db3b8 *vignettes/release-notes.Rmd
+b6bf80c77b5d818be62f6f63c3501cf6 *vignettes/style.css
