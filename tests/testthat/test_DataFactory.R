@@ -48,8 +48,8 @@ test_that("DataFactory", {
   expect_true(verifyFunction('x_ra', is.raw, 0))
   expect_true(verifyFunction('x_ra', is.raw))
 
-  expect_true(verifyFunction('x_da', lubridate::is.Date))
-  expect_true(verifyFunction('x_dc', lubridate::is.POSIXct))
+  expect_true(verifyFunction('x_da', function(x) is(x, 'Date')))
+  expect_true(verifyFunction('x_dc', function(x) inherits(x, 'POSIXct')))
 
   expect_true(verifyFunction('x_ui', is.integer, 0))
   expect_true(verifyFunction('x_ui', function(x) is.integer(x) && x >= 0L))

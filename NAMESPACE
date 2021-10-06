@@ -1,7 +1,6 @@
 import("data.table")
 import("crayon")
 import("wyz.code.offensiveProgramming")
-importFrom("lubridate", "is.Date", "is.POSIXct", "is.POSIXlt")
 importFrom("methods", "formalArgs", "getMethod", "is")
 importFrom("utils", "methods", "combn")
 importFrom("stats", "runif")

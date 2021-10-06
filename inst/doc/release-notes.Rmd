@@ -22,6 +22,20 @@ source('common-style.R')
 
 Latest release replaces fully olders ones, that are now considered obsoletes. Keep the pace, and  upgrade your packages to use the latest version!
 
+# name [awesome-asterion-phi] package-version [1.1.21] timestamp [2021-10-05 20:33:52]
+
+1. CRAN information on obsolescence of lubridate - need to remove dependency.
+1. lubridate was speficied in files `r citefile("DESCRIPTION")` and `r citefile("NAMESPACE")`  
+<pre>
+tests/testthat/test_DataFactory.R:  expect_true(verifyFunction('x_da', lubridate::is.Date))
+tests/testthat/test_DataFactory.R:  expect_true(verifyFunction('x_dc', lubridate::is.POSIXct))
+</pre>
+1. Test, Duration: `r citefigure('4.1')`, OK: `r citefigure('750')`
+1. `r citeexec('R CMD check')`, Duration: `r citefigure('29.2s')`, 0 errors ✓ | 0 warnings ✓ | 0 notes ✓
+1. `r citeval('Commercial software release management')`
+1. `r citefolder('vignette')` content update
+1. `r citeop("git")` alignment
+
 # name [awesome-asterion-tau] package-version [1.1.19] timestamp [2020-11-09 19:49:02]
 
 1. solved test issue related to R 4.0

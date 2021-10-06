@@ -1,5 +1,5 @@
-aca644cd0790e2a3a6549ee54f9400f9 *DESCRIPTION
-0e1ceed55e46835c32f5720e546aae1e *NAMESPACE
+69c1bfabfb3ba406772e04899b3dea2d *DESCRIPTION
+3b97a5f49aa10170bbbd7fdd198880b0 *NAMESPACE
 094febed9c250fc964b92572956d7336 *R/DataFactory.R
 7b107fcdc561e9af781a4ca97d33ef5e *R/buildArgumentsSignature.R
 e7779483612d8300285fc92fcf2c622a *R/buildEllipsisNames.R
@@ -23,12 +23,12 @@ b092feeb5dd33f20a84a87ed6d7b335d *R/removeEllipsisName.R
 4ea687d99033dca74ffd667e0d47b2aa *R/setGenerationContext.R
 57e0a0210b8402ca90645584e3c90852 *R/testFunction.R
 e0170058c1907698434f2946099e8bb4 *R/usesSemanticArgumentNames.R
-6534e6b7b0203b3b2b5b96d9dd5af3ab *build/partial.rdb
+11e37652267e229957d45c309b1ad37f *build/partial.rdb
 fc8f0004aa1040e312474312d29137ed *build/vignette.rds
 5bc83ef41cde426556b33d69e8e21d49 *inst/doc/release-notes.R
-de1efd25e6cd5e977e3c1dee662db3b8 *inst/doc/release-notes.Rmd
-59e4ff1463dcd04d99bb180849d8a95c *inst/doc/release-notes.html
-7129187cdeb942cababc9b737e3b6fe8 *inst/extdata/project-release.rds
+3fff3a5a62f3455afe1149563afb5bd4 *inst/doc/release-notes.Rmd
+8ac3a5141436f32a383f55b218b7fac8 *inst/doc/release-notes.html
+cb7bc66e1dbc4f1d7275aca160b70028 *inst/extdata/project-release.rds
 d06b0712cb5811161401b6ff4b409cff *inst/unit-testing/ut-computeArgumentCombination.R
 2552e7eb280033cdc871fc0bda3da91c *inst/unit-testing/ut-divide.R
 8c2eb3f82fffe5f2cc042caa13aa0539 *inst/unit-testing/ut-exploreSignatures.R
@@ -47,7 +47,7 @@ b92f27ba9d312d8627500bb832c5c930 *man/setDefaultArgumentsGenerationContext.Rd
 17596be4369abdbda5e1216ebdbebaba *man/testFunction.Rd
 f040bf7b135586dfce3639a9952937d1 *man/usesSemanticArgumentNames.Rd
 5674aa9f06d53b8ddc497fd6a7b5da2f *tests/testthat.R
-616f0ca2dab6f4374ecd14885ffb1778 *tests/testthat/test_DataFactory.R
+440c15600589a56eb44ed442d5745093 *tests/testthat/test_DataFactory.R
 3186caa1efcb0c0ec52119b8a0637e65 *tests/testthat/test_buildArgumentsSignature.R
 e142a7213f88bb9b47091c84baa1f40f *tests/testthat/test_buildEllipsisNames.R
 b4299420cd5c84dd69c4bfda9512ef5e *tests/testthat/test_buildEllipsisSignature.R
@@ -70,5 +70,5 @@ e3fe5caa355dd14f9cb14097ea896cae *tests/testthat/test_setGenerationContext.R
 f05753c5e9bf154c761fc21afec7542c *tests/testthat/test_testFunction.R
 c4c87e9461f00d88cc27182c80fb4e87 *vignettes/common-style.R
 21139cabc37e230dca24bf2706da5b97 *vignettes/images/metatesting-hex.png
-de1efd25e6cd5e977e3c1dee662db3b8 *vignettes/release-notes.Rmd
+3fff3a5a62f3455afe1149563afb5bd4 *vignettes/release-notes.Rmd
 b6bf80c77b5d818be62f6f63c3501cf6 *vignettes/style.css
