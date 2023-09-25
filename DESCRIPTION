@@ -1,7 +1,7 @@
 Package: wyz.code.metaTesting
 Type: Package
 Title: Wizardry Code Meta Testing
-Version: 1.1.21
+Version: 1.1.22
 Author: Fabien Gelineau <neonira@gmail.com>
 Maintainer: Fabien Gelineau <neonira@gmail.com>
 Description: Meta testing is the ability to test a function without having to 
@@ -29,6 +29,6 @@ RoxygenNote: 6.1.1
 VignetteBuilder: knitr
 URL: https://neonira.github.io/offensiveProgrammingBook_v1.2.2/
 NeedsCompilation: no
-Packaged: 2021-10-06 06:24:16 UTC; fabien
+Packaged: 2023-09-25 06:38:41 UTC; fabien
 Repository: CRAN
-Date/Publication: 2021-10-06 06:50:04 UTC
+Date/Publication: 2023-09-25 07:10:02 UTC

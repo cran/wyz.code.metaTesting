@@ -22,6 +22,11 @@ source('common-style.R')
 
 Latest release replaces fully olders ones, that are now considered obsoletes. Keep the pace, and  upgrade your packages to use the latest version!
 
+# name [awesome-asterion-khi] package-version [1.1.22] timestamp [2023-09-25 08:34:40]
+
+1. CRAN note about item in Rd for 4.3.0 implies changes 
+1. Changes applied to `r citefile("FunctionParameterTypeFactory.R")` 
+
 # name [awesome-asterion-phi] package-version [1.1.21] timestamp [2021-10-05 20:33:52]
 
 1. CRAN information on obsolescence of lubridate - need to remove dependency.
